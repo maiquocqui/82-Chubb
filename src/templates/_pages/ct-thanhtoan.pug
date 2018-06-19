@@ -1,0 +1,150 @@
+.page-name-wrap
+	.container
+		h1.page-name Thanh toán trực tuyến
+.container
+	.pay-notify <strong>Công ty Cổ phần Thanh toán Quốc gia Việt Nam (Napas)</strong> xin gửi tới Quý công ty thông tin lịch bảo trì của <strong>Ngân hàng TMCP Tiên Phong (TPB)</strong>, cụ thể như sau: Thời gian dự kiến: từ 23h ngày 17/11/2017 đến 02h ngày 18/11/2017, Phạm vi ảnh hưởng: Tất cả các giao dịch thanh toán trực tuyến bằng thẻ của Ngân hàng TPB.
+	section.form-page
+		.form-wrap
+			//- h2.module-title Quý khách vui lòng cung cấp tất cả thông tin sau đây
+			.row
+				.form-group.col-12.col-md-6
+					label Số Hợp đồng/HSYC Bảo hiểm <span class="required">*</span>
+					input.form-control(type="text" value="")
+				.form-group.col-12.col-md-6
+					label Chứng minh Nhân dân <span class="required">*</span>
+					input.form-control(type="text" value="")
+				.form-group.col-12.col-md-6
+					label Mã số ĐDKD 
+					input.form-control(type="text" value="")
+				.form-group.col-12.col-md-6
+					label Số điện thoại <span class="required">*</span>
+					input.form-control(type="text" value="")
+				.form-group.col-12.col-md-6
+					label Email <span class="required">*</span>
+					input.form-control(type="email" value="")
+				.form-group.col-12.col-md-6
+					label Lý do thanh toán
+					select.form-control
+						option(value="") -- Chọn --
+				.form-group.col-12.col-md-6
+					label Hình thức thanh toán
+					select.form-control
+						option(value="") -- Chọn --
+				.form-group.col-12.col-md-6.price
+					label Số tiền thanh toán <span class="required">*</span>
+					input.form-control(type="text" value="")
+				//- .form-group.col-12
+					.form-text.text-danger Mã giao dịch (OTP) đã được gửi đến số điện thoại: 0908xxx988 của Quý khách!
+				.form-group.col-12
+					.checkbox.agree
+						input#chapnhan(type="checkbox", name="chapnhan")
+						label(for="chapnhan") Tôi chấp nhận thanh toán với các thông tin trên
+				.col-12.btn-wrap
+					a.btn-go.btn-back(href="#!") Hủy bỏ
+					//- a.btn-go.btn-getotp(href="#!") Cấp lại mã OTP
+					input.btn-go.btn-continue(type="submit", value="Thanh toán")
+section.payment-description
+	.container
+		.payment-content.content
+			p.text-danger Ghi chú:
+			ul
+				li (<span class="text-danger">*</span>): Các thông tin bắt buộc nhập
+				li Thanh toán phí bảo hiểm lần đầu: đây là phí đóng cho trường hợp mới có HSYCBH, chưa phát hành Hợp đồng.
+				li Thanh toán phí bảo hiểm định kỳ + hoàn trả tạm ứng: Các trường hợp đóng phí bình thường hoặc hoàn trả tạm ứng (vay) từ giá trị hoàn lại.
+				li Phí điều chỉnh hợp đồng:  đây là phí dùng để đóng phí bổ sung cho các trường hợp điều chỉnh hợp đồng kể cả khôi phục hợp đồng.
+				li Thanh toán nội địa: dùng để sử dụng cho thẻ được các TCPHT phát hành để thực hiện các giao dịch thẻ trong lãnh thổ Việt Nam.
+				li Thanh toán quốc tế: dùng để sử dụng cho thẻ Visa, MasterCard, JCB, American Express.
+				li Thẻ quốc tế chỉ được công ty chấp nhận thanh toán phí bảo hiểm. Công ty không chấp nhận hoàn trả khoản tạm ứng bằng Thẻ quốc tế, Quý khách vui lòng sử dụng các hình thức khác để thanh toán hoàn trả tạm ứng.
+			p.text-italic.text-danger Lưu ý: Hiện tại Ngân hàng Citibank chưa mở chức năng thanh toán trực tuyến cho thẻ ghi nợ (Debit card) Citibank Visa, nên tạm thời loại thẻ này chưa thanh toán được trên cổng thanh toán trực tuyến. Thẻ tín dụng (Credit card) của ngân hàng này vẫn thanh toán bình thường trên Cổng thanh toán trực tuyến.
+		.payment-bank
+			label Thanh toán nội địa
+			.bank-list
+				ul
+					li
+						a.bank(href="")
+							img(src="img/bank/1.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/2.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/3.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/4.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/5.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/6.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/7.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/8.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/9.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/10.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/11.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/12.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/13.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/14.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/15.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/16.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/17.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/18.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/19.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/20.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/21.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/22.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/23.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/24.png", alt="")
+		.payment-bank.payment-bank2
+			label Thanh toán quốc tế
+			.bank-list
+				ul
+					li
+						a.bank(href="")
+							img(src="img/bank/qt1.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/qt2.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/qt3.png", alt="")
+					li
+						a.bank(href="")
+							img(src="img/bank/qt4.png", alt="")

@@ -1,0 +1,72 @@
+.system-page
+	padding: 60px 0
+	+media-breakpoint-down(lg)
+		padding: 40px 0
+	+media-breakpoint-down(sm)
+		padding: 30px 0
+.system-map
+	+pos(rel,null)
+	overflow: hidden
+	border: 2px solid $cyan
+	padding: 20px
+	background: $white
+	+media-breakpoint-down(xs)
+		padding: 15px
+	.findmap-wrap
+		.findmap
+			margin-bottom: 0
+			.form-group
+				margin-bottom: 10px
+			.btn-wrap
+				margin-bottom: 10px
+				.btn-go
+					display: block
+					width: 100%
+					text-align: center
+			.filter-result
+				+fs(14rem)
+				+font500
+				padding: 15px 0
+				border-top: 1px solid darken($white,10%)
+				+media-breakpoint-down(sm)
+					+fs(12rem)
+		.addresslist
+			background: $white
+			overflow: auto
+			max-height: calc(480px - 193px)
+			margin: 0px -10px
+			+media-breakpoint-down(sm)
+				max-height: 200px
+			&::-webkit-scrollbar-track
+				// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+				background-color: darken($white,5%)
+			&::-webkit-scrollbar
+				width: 5px
+				background-color: darken($white,5%)
+			&::-webkit-scrollbar-thumb
+				background-color: darken($white,30%)
+				border: none
+			ul
+				li
+					+fs(14rem)
+					color: darken($white,60%)
+					padding: 15px
+					cursor: pointer
+					+media-breakpoint-down(sm)
+						+fs(12rem)
+					.name
+						+fs(16rem)
+						+font500
+						margin-bottom: 10px
+						color: $main
+						+media-breakpoint-down(sm)
+							+fs(14rem)
+					&:hover
+						background: darken($white,3%)
+					&.active
+						background: darken($white,7%)
+	#map
+		padding-left: 20px
+		+media-breakpoint-down(sm)
+			padding-left: 0
+			margin-top: 15px

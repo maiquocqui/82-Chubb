@@ -1,0 +1,86 @@
+.page-name-wrap
+	.container
+		h1.page-name Điều chỉnh thông tin Hợp đồng Bảo hiểm
+.container
+	section.form-page
+		.form-wrap
+			.group
+				h2.module-title Điều chỉnh địa chỉ liên lạc
+				.row
+					.form-group.col-12.col-md-6
+						label Địa chỉ liên lạc hiện tại
+						input.form-control(type="text" value="Khóm 6, Phường 8, Tỉnh Trà Vinh" disabled)
+					.form-group.col-12
+						label Yêu cầu điều chỉnh:
+						.form-child
+							.form-row
+								.form-group.col-12.col-lg-6
+									label Tên người nhận thư (Nếu người nhận thư không phải là BMBH)
+									input.form-control(type="text" value="C/O Nguyễn Văn A")
+								.form-group.col-12.col-md-6
+									label Số nhà & Đường/ Thôn/ Xóm/ Ngõ/ Ấp 
+										span.required *
+									input.form-control(type="text" value="156 Nguyễn Văn Thủ")
+								.form-group.col-12.col-md-6
+									label Phường/ Xã & Quận/ Huyện/ Thị xã/ TP thuộc tỉnh 
+										span.required *
+									input.form-control(type="text" value="Phường Đakao")
+								.form-group.col-12.col-md-6
+									label Tỉnh/ TP trực thuộc TW 
+										span.required *
+									select.form-control
+										option TP. Hồ Chí Minh
+										option Hà Nội
+								.form-group.col-12
+									input.form-control(type="text" value="C/O Nguyễn Văn A, 156 Nguyễn Văn Thủ, Phường Đakao, Quận 1, TP. Hồ Chí Minh" disabled)
+			.group
+				h2.module-title Điều chỉnh địa chỉ thường trú
+				.checkbox.agree.agree-info
+					input#chapnhan(type="checkbox", name="chapnhan")
+					label(for="chapnhan") Thông tin giống địa chỉ liên lạc
+				.row
+					.form-group.col-12.col-md-6
+						label Người yêu cầu điều chỉnh
+						select.form-control
+							option(value="") Trần Thị B
+							option(value="") Nguyễn Văn C
+					.form-group.col-12.col-md-6
+						label Địa chỉ thường trú hiện tại
+						input.form-control(type="text" value="Khóm 6, Phường 8, Tỉnh Trà Vinh")
+					.form-group.col-12
+						label Yêu cầu điều chỉnh:
+						.form-child
+							.form-row
+								.form-group.col-12.col-md-6
+									label Số nhà & Đường/ Thôn/ Xóm/ Ngõ/ Ấp 
+										span.required *
+									input.form-control(type="text" value="156 Nguyễn Văn Thủ")
+								.form-group.col-12.col-md-6
+									label Phường/ Xã & Quận/ Huyện/ Thị xã/ TP thuộc tỉnh 
+										span.required *
+									input.form-control(type="text" value="Phường Đakao, Quận 1")
+								.form-group.col-12.col-md-6
+									label Tỉnh/ TP trực thuộc TW 
+										span.required *
+									select.form-control
+										option TP. Hồ Chí Minh
+								//- .form-group.col-12.col-md-6
+									label Mã OTP
+										span.required *
+									input.form-control(type="password" value="1234")
+									a.form-text.text-info(href="#!") Gửi lại mã OTP
+								.form-group.col-12
+									input.form-control(type="text" value="Trần Thị B, 156 Nguyễn Văn Thủ, Phường Đakao, Quận 1, TP. Hồ Chí Minh" disabled)
+				.checkbox.agree
+					input#dongy(type="checkbox", name="dongy")
+					label(for="dongy") 
+						.content
+							p (<span style="color:red">*</span>) Tôi đồng ý/ ý thức rằng:
+							ul
+								li Cam kết rằng việc điều chỉnh/bổ sung thông tin trên đây là do ý chí và nguyện vọng của Tôi/Chúng tôi.
+								li Yêu cầu điều chỉnh trên chỉ bắt đầu có hiệu lực kể từ ngày Chubb Life xác nhận giao dịch cập nhật trực tuyến thành công.
+							p(style="font-style:italic") Lưu ý: các trường (<span style="color:red">*</span>) là thông tin bắt buộc
+			.btn-wrap.justify-content-end
+				a.btn-go.btn-back(href="#!") Quay lại
+				input.btn-go.btn-continue(type="submit", value="Xác nhận")
+			//- .submit-notify.text-orange.text-right Giao dịch cập nhật trực tuyến thành công. Chubb Life sẽ gửi email xác nhận nội dung thông tin được cập nhật. Cảm ơn Quý khách!

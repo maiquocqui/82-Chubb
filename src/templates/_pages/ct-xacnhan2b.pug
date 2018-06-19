@@ -1,0 +1,70 @@
+.page-name-wrap
+	.container
+		h1.page-name Đăng ký tài khoản truy cập
+.container
+	section.form-page
+		.form-wrap
+			h2.module-title Quý khách vui lòng cung cấp các thông tin sau đây để hoàn thành đăng ký tài khoản truy cập trang trực tuyến của Chubb Life.
+			form.row.form-disabled
+				.form-group.col-12.col-md-6
+					label Tài khoản truy cập
+					input.form-control(type="text" placeholder="")
+				.form-group.col-12.col-md-6
+					label Email
+					input.form-control(type="email" placeholder="")
+				.form-group.col-12.col-md-6
+					label Tạo mật khẩu
+					input.form-control(type="password" placeholder="")
+				//- .form-group.col-12.col-md-6
+					label Nhập mã OTP
+					input.form-control.is-invalid(type="password" placeholder="")
+					//- .invalid-feedback
+						i.fa.fa-exclamation-triangle
+						| Sai mã OTP
+				.form-group.col-12.col-md-6
+					label Xác nhận mật khẩu
+					input.form-control(type="password" placeholder="")
+				//- .form-group.col-12
+					.checkbox.agree
+						input#chapnhan(type="checkbox", name="chapnhan")
+						label(for="chapnhan") Tôi đồng ý với các 
+							a.text-cyan(href="#!") Điều khoản và Điều kiện sử dụng
+							|.
+				//- .col-12.btn-wrap
+					a.btn-go.btn-back(href="#!") Quay lại
+					//- a.btn-go.btn-getotp(href="#!") Cấp lại mã OTP
+					input.btn-go.btn-continue(type="submit", value="Xác nhận")
+			form.row
+				//- .form-group.col-12.col-md-6
+					label Tài khoản truy cập
+					input.form-control(type="text" placeholder="")
+				//- .form-group.col-12.col-md-6
+					label Email
+					input.form-control(type="email" placeholder="")
+				//- .form-group.col-12.col-md-6
+					label Tạo mật khẩu
+					input.form-control(type="password" placeholder="")
+				//- .form-group.col-12
+					.form-text.text-danger Mã giao dịch (OTP) sẽ được gửi đến số điện thoại: &#60;0908xxx988&#62; của Quý khách!
+				.form-group.col-12.col-md-6
+					label Nhập mã OTP
+					input.form-control(type="password" placeholder="")
+					.form-text.text-danger Mã giao dịch (OTP) sẽ được gửi đến số điện thoại: &#60;0908xxx988&#62; của Quý khách!
+					//- .invalid-feedback
+						i.fa.fa-exclamation-triangle
+						| Sai mã OTP
+				//- .form-group.col-12.col-md-6
+					label Xác nhận mật khẩu
+					input.form-control(type="password" placeholder="")
+				//- .form-group.col-12
+					.form-text.text-danger Mã giao dịch (OTP) sẽ được gửi đến số điện thoại: &#60;0908xxx988&#62; của Quý khách!
+				//- .form-group.col-12
+					.checkbox.agree
+						input#chapnhan(type="checkbox", name="chapnhan")
+						label(for="chapnhan") Tôi đồng ý với các 
+							a.text-cyan(href="#!") Điều khoản và Điều kiện sử dụng
+							|.
+				.col-12.btn-wrap
+					//- a.btn-go.btn-back(href="#!") Quay lại
+					a.btn-go.btn-getotp(href="#!") Cấp lại mã OTP
+					input.btn-go.btn-continue(type="submit", value="Xác nhận")

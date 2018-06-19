@@ -1,0 +1,122 @@
+.homepage
+	.fullpage
+		background: darken($white,3%)
+
+.home-title
+	+fs(24rem)
+	line-height: 1.5rem
+	+font500
+	color: $main
+	margin-bottom: 30px
+	+media-breakpoint-down(md)
+		+fs(22rem)
+	+media-breakpoint-down(sm)
+		+fs(20rem)
+
+.page-title
+	+flexbox
+	align-items: center
+	align-content: center
+	padding: 10px 0
+	border-bottom: 1px solid darken($white,10%)
+	margin-bottom: 20px
+	.icon
+		width: 30px
+		line-height: 1
+	.text
+		width: calc(100% - 30px)
+		+fs(25rem)
+		+media-breakpoint-down(sm)
+			+fs(18rem)
+	.print
+		color: $red
+		+fs(18rem)
+		font-weight: normal
+
+.page-des
+	+fs(16rem)
+	line-height: 1.4
+	max-width: 70%
+	margin: 0 auto 15px
+	+media-breakpoint-down(sm)
+		max-width: 100%
+	&:after
+		content: ''
+		display: block
+		width: 50px
+		height: 2px
+		background: $green
+		margin: 10px auto 0
+.page-des2
+	@extend .page-des
+	&:after
+		display: none
+
+.welcome-box
+	margin: 50px 0
+	background: $white
+	border: 1px solid darken($white,10%)
+	padding: 50px
+	+media-breakpoint-down(lg)
+		padding: 40px
+	+media-breakpoint-down(md)
+		padding: 30px
+	+media-breakpoint-down(sm)
+		padding: 20px
+		margin: 40px 0px 0
+	+media-breakpoint-down(xs)
+		padding: 15px
+	.home-title
+		margin-bottom: 20px
+	.des
+		+fs(18rem)
+		margin-bottom: 30px
+		padding: 0px 20px
+		+media-breakpoint-down(lg)
+			padding: 0px 15px
+			+fs(16rem)
+		+media-breakpoint-down(md)
+			+fs(14rem)
+	.btn-go
+		+flexbox
+		justify-content: center
+		align-items: center
+		text-align: center
+		padding-right: 35px
+		height: 60px
+		+bor-rad(5px)
+		+fs(24rem)
+		+font700
+		color: $white
+		+media-breakpoint-down(lg)
+			+fs(18rem)
+			height: 50px
+		+media-breakpoint-down(sm)
+			height: 40px
+			+fs(16rem)
+		.material-icons
+			margin-right: 11px
+		&.go-login
+			background: $yellow
+		&.go-register
+			background: $green
+		&:hover
+			filter: brightness(110%)
+			box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+
+.home-payment
+	padding-bottom: 30px
+	+media-breakpoint-down(sm)
+		margin: 40px 0px 0px
+	.payment-list
+		.payment
+			margin-bottom: 30px
+			figure
+				text-align: center
+				.icon
+				figcaption
+					padding: 10px 0
+					.payment-name
+						+fs(18rem)
+						+media-breakpoint-down(sm)
+							+fs(15rem)

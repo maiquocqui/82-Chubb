@@ -1,0 +1,102 @@
+.fly-tool
+	+pos(fix, 150px -10px null null)
+	z-index: 100
+	width: 320px
+	text-align: right
+	z-index: 100
+	+transform(translate(260px, 0))
+	+media-breakpoint-down(lg)
+		top: 50%
+		+transform(translate(260px,-50%))
+	+media-breakpoint-down(md)
+		width: 260px
+		+transform(translate(210px,-50%))
+	.fly-button
+		display: inline-block
+		background: #ffb616
+		color: $white
+		+fs(14rem)
+		+flexbox
+		padding: 10px
+		align-items: center
+		align-content: center
+		+bor-rad(5px)
+		border: 1px solid $white
+		+transition(all,0.5s)
+		font-size: 100% !important
+		+media-breakpoint-down(md)
+			padding: 5px 10px
+		*
+			// font-size: 100% !important
+		&:hover
+			+transform(translate(-260px, 0))
+			+media-breakpoint-down(md)
+				+transform(translate(-210px, 0))
+		+ .fly-button
+			margin-top: 10px
+		.icon
+			width: 32px
+			height: 32px
+			+flexbox
+			justify-content: center
+			align-items: center
+			align-content: center
+			+media-breakpoint-down(md)
+				width: 20px
+				height: 20px
+			img
+				width: 100%
+				max-width: 90%
+				max-height: 90%
+		.text
+			width: calc(100% - 32px)
+			padding: 0px 10px
+			text-align: left
+			+flexbox
+			align-items: center
+			align-content: center
+			+media-breakpoint-down(md)
+				width: calc(100% - 20px)
+			span
+				color: $white
+				display: inline-block
+				vertical-align: middle
+				margin-left: 10px
+				cursor: pointer
+				border: 1px solid color-rgba($white,0.5)
+				+bor-rad(3px)
+				line-height: 1
+				+font700
+				width: 30px
+				height: 30px
+				line-height: 30px
+				text-align: center
+				+fs(12rem)
+				+media-breakpoint-down(md)
+					width: 20px
+					height: 20px
+					line-height: 20px
+					margin-left: 5px
+				&.medium
+					+fs(16rem)
+					+media-breakpoint-down(md)
+						+fs(16rem)
+				&.big
+					+fs(24rem)
+					+media-breakpoint-down(md)
+						+fs(18rem)
+				&:hover
+					background: color-rgba($white,0.2)
+				&.active
+					background: $white
+					color: $green
+					border-color: $white
+		&.hotline
+			background: #ff0198
+			.text
+				+fs(20rem)
+				+font500
+				+media-breakpoint-down(md)
+					+fs(16rem)
+		&.font
+			background: $green

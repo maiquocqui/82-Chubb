@@ -1,0 +1,27 @@
+.contact-page
+	padding: 60px 0
+	+media-breakpoint-down(lg)
+		padding: 40px 0
+	+media-breakpoint-down(sm)
+		padding: 30px 0
+	.contact-info
+		border: 2px solid $cyan
+		background: $white
+		padding: 20px
+		margin-bottom: 30px
+		.map-info
+			.company
+				+fs(16rem)
+				+font500
+				margin-bottom: 20px
+			ul
+				margin-bottom: 30px
+				li
+					+fs(14rem)
+					color: darken($white,60%)
+				.email
+					color: $cyan
+		.contact-map
+			+media-breakpoint-down(md)
+				margin-top: 20px
+	.contact-form

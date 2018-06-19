@@ -1,0 +1,55 @@
+.page-name-wrap
+	.container
+		h1.page-name Liên hệ
+.container
+	section.contact-page
+		.contact-info
+			.row
+				.col-12.col-lg-6
+					.map-info
+						h2.company Công ty TNHH Bảo hiểm nhân thọ Chubb Việt Nam
+						ul
+							li Tầng 21, Toà nhà Sunwah
+							li 115 Nguyễn Huệ, Quận 1, TP. HCM, Việt Nam
+							li Điện thoại: 
+								a.phone(href="tel:(+84 28) 3827 8123") (+84 28) 3827 8123
+							li Fax: (+84 28) 3821 9000
+							li Đường dây nóng: 
+								a.phone(href="tel:(+84 28) 3827 8123") (+84 28) 3827 8123
+							li E-mail: 
+								a.email(href="mailto:chubblife.vietnam@chubb.com") chubblife.vietnam@chubb.com
+							li Giờ làm việc: Thứ Hai đến Thứ Sáu, 8:30 - 17:30
+						//- .btn-wrap
+							a.btn-go.btn-continue(href="#!") Tìm văn phòng gần nhất
+				.col-12.col-lg-6
+					//- .contact-map
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4908242476513!2d106.70107151538356!3d10.77366959232337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f46dc0a23a3%3A0x2720bee04df77539!2zU3Vud2FoIFRvd2VyLCBOZ3V5w6rMg24gSHXDqsyjLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1517369442531', width='100%', height='300', frameborder='0', style='border:0', allowfullscreen='')
+		.contact-form
+			.form-wrap
+				.row
+					.form-group.col-12.col-md-6
+						label Tên đầu tiên 
+							span.required *
+						input.form-control(type="text" placeholder="")
+					.form-group.col-12.col-md-6
+						label Tên họ
+							span.required *
+						input.form-control(type="text" placeholder="")
+					.form-group.col-12.col-md-6
+						label Email 
+							span.required *
+						input.form-control(type="email")
+					.form-group.col-12.col-md-6
+						label Số điện thoại
+						input.form-control(type="text")
+					//- .form-group.col-12.col-md-6
+						label Số Hợp đồng Bảo hiểm/ Hồ sơ Yêu cầu Bảo hiểm 
+							span.required *
+						input.form-control(type="text")
+					.form-group.col-12
+						label Nội dung yêu cầu 
+							span.required *
+						textarea.form-control(name="", cols="30", rows="5")
+					.col-12.btn-wrap
+						input.btn-go.btn-getotp(type="submit" value="Gửi")
+

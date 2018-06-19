@@ -1,0 +1,16 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'paypage'
+	- var selected = 'Home';
+	- var href = '';
+
+block css
+
+block body
+	include _layout/header1b
+	main
+		include _pages/ct-hopdong-tk
+	include _layout/footer

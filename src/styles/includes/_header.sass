@@ -1,0 +1,441 @@
+.homepage
+	header
+		display: block
+		background: none !important
+		+media-breakpoint-up(xl)
+			+pos(abs, 0 0 null 0)
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 0 null 0)
+			background: color-rgba($white,0.9) !important
+		.login-wrap
+			display: none
+header
+	display: none
+	z-index: 1000
+	+media-breakpoint-down(lg)
+		+pos(fix, 0 0 null 0)
+		background: color-rgba($white,0.9)
+		border-bottom: 1px solid color-rgba($black,0.1)
+	.header-main
+		+flexbox
+		justify-content: space-between
+		border-bottom: 1px solid color-rgba($white,0.5)
+		+media-breakpoint-down(lg)
+			background: none
+			border-bottom: none
+	.login-wrap
+		+pos(rel,null)
+		display: none
+		+media-breakpoint-down(lg)
+			display: block
+		.login-toggle
+			color: $white
+			line-height: 1
+			.material-icons
+				+fs(24rem)
+	.login
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 36px
+		+fs(13rem)
+		color: $white
+		+media-breakpoint-down(lg)
+			+pos(abs, 100% 0 null null)
+			background: $white
+			+transition(all,0s)
+			height: auto
+			width: 150px
+			box-shadow: 0px 5px 15px color-rgba($black,0.1)
+			display: none
+			// &:before
+			// 	content: ''
+			// 	border: 5px solid transparent
+			// 	border-bottom: 5px solid $white
+			// 	border-top: none
+			// 	+pos(abs, -5px 0 null null)
+		.material-icons
+			+fs(18rem)
+			margin-right: 5px
+		ul
+			+flexbox
+			align-items: center
+			align-content: center
+			+media-breakpoint-down(lg)
+				flex-wrap: wrap
+			li
+				line-height: 1rem
+				padding: 0px 10px
+				+media-breakpoint-down(lg)
+					width: 100%
+					padding: 0px 15px
+					color: $main
+				+ li
+					border-left: 1px solid $white
+					+media-breakpoint-down(lg)
+						border-left: none
+				&:last-child
+					padding-right: 0
+				.user, .date
+					line-height: 1
+					+media-breakpoint-down(lg)
+						padding: 10px 0
+						line-height: 1.5
+					strong
+						+media-breakpoint-down(lg)
+							display: block
+							+fs(16rem)
+							white-space: nowrap
+				.user
+					+media-breakpoint-down(lg)
+						padding-bottom: 0
+				a
+					+fs(13rem)
+					color: $white
+					line-height: 12px
+					+media-breakpoint-down(lg)
+						color: $main
+						+fs(14rem)
+						display: block
+						padding: 10px 0
+					.material-icons
+						margin-right: 5px
+						+fs(18rem)
+						line-height: inherit
+						vertical-align: middle
+						+media-breakpoint-down(lg)
+							+fs(20rem)
+					&:hover
+						color: $cyan
+				&:last-child
+					a
+						// &:before
+						// 	content: 'lock_outline'
+		&.done
+			+media-breakpoint-down(lg)
+				width: 180px
+			ul
+				li
+					&:last-child
+						a
+	.overlay
+		+pos(fix, 61px null 0 0)
+		right: 0
+		z-index: 800
+		background: $black
+		opacity: 0.7
+		display: none
+	.btn-showmenu
+		width: 20px
+		height: 14px
+		+pos(rel,null)
+		margin: 18px 15px 18px 0
+		display: none
+		+media-breakpoint-down(lg)
+			display: block
+		&:before, &:after
+			content: ''
+			display: block
+			height: 2px
+			background: $black
+			z-index: 1
+			+pos(abs, null 0 null 0)
+			+transition(all,0.5s)
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+		span
+			display: block
+			width: 100%
+			height: 100%
+			&:before, &:after
+				content: ''
+				display: block
+				height: 2px
+				background: $black
+				z-index: 1
+				+pos(abs, 50% 0 null 0)
+				+transform(translate(0,-50%))
+				+transition(all,0.5s)
+		&.active
+			&:before
+				+transform(translateY(-10px))
+				opacity: 0
+				visibility: hidden
+			&:after
+				+transform(translateY(10px))
+				opacity: 0
+				visibility: hidden
+			span
+				&:before
+					+transform(translate(0,-50%)rotateZ(45deg))
+				&:after
+					+transform(translate(0,-50%)rotateZ(-45deg))
+	.sitelogo
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 80px
+		+media-breakpoint-down(lg)
+			height: 50px
+		a
+			display: block
+		img
+			height: 16px
+			+media-breakpoint-down(lg)
+				filter: invert(100%) brightness(0)
+	.col-right
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: flex-end
+		flex: auto
+	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix, 51px null 0 0)
+			width: 300px
+			background: color-rgba($black,0.9)
+			border-right: 1px solid color-rgba($white,0.5)
+			z-index: 900
+			+transform(translate(-100%,0))
+			+transition(all,0.5s)
+			&.open
+				+transform(translate(0%,0))
+		ul.menu-link
+			+flexbox
+			+media-breakpoint-down(lg)
+				flex-wrap: wrap
+			li
+				+media-breakpoint-down(lg)
+					width: 100%
+					border-bottom: 1px solid color-rgba($white,0.2)
+				+ li
+					margin-left: 40px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				a
+					color: $white
+					+flexbox
+					+fs(16rem)
+					align-items: center
+					align-content: center
+					justify-content: center
+					+pos(rel,null)
+					height: 80px
+					+media-breakpoint-down(lg)
+						height: unset
+						padding: 10px 15px
+						+fs(14rem)
+						justify-content: flex-start
+					&:after
+						content: ''
+						display: block
+						+pos(abs, null null -2px 50%)
+						+transform(translate(-50%,0))
+						width: 60px
+						height: 3px
+						visibility: hidden
+						opacity: 0
+						background: $white
+						+transition(all,0.5s)
+						+media-breakpoint-down(lg)
+							+pos(abs, 0 -1px -1px unset)
+							+transform(translate(0,0))
+							width: 5px
+							height: unset
+							background: $green
+				&:hover
+					a
+						&:after
+							visibility: visible
+							opacity: 1
+				&.active
+					a
+						+media-breakpoint-down(lg)
+							color: $green
+							background: color-rgba($white,0.1)
+						&:after
+							visibility: visible
+							opacity: 1
+	.language
+		margin-left: 30px
+		+media-breakpoint-down(sm)
+			margin-left: 15px
+		ul
+			+flexbox
+			li
+				+ li
+					a
+						border-left: 1px solid color-rgba($white,0.3)
+						+media-breakpoint-down(lg)
+							border-left-color: color-rgba($black,0.3)
+				a
+					display: block
+					padding: 0px 10px
+					opacity: 0.8
+					color: $white
+					+fs(12rem)
+					line-height: 1rem
+					+media-breakpoint-down(lg)
+						color: $main
+						opacity: 0.3
+				&.active
+					a
+						opacity: 1
+						text-decoration: underline
+	.search
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 80px
+		margin-left: 30px
+		+media-breakpoint-down(lg)
+			height: 60px
+		+media-breakpoint-down(sm)
+			margin-left: 15px
+		.search-toggle
+			+fs(16rem)
+			color: $white
+			cursor: pointer
+			.material-icons
+				line-height: 1
+				vertical-align: middle
+			+media-breakpoint-down(lg)
+				color: $main
+		.search-wrap
+			+pos(abs, 100% 0 null null)
+			display: none
+.header1
+	display: block
+	// background: $green
+	+media-breakpoint-down(lg)
+		border-bottom: 1px solid color-rgba($white,0.5)
+	.header-top
+		background: $bluegrey
+		+media-breakpoint-down(lg)
+			background: color-rgba($white,0.3)
+		.col-right
+			+media-breakpoint-down(lg)
+				// justify-content: center
+				justify-content: flex-start 
+	.btn-showmenu
+		&:before,&:after
+			background: $white
+		span
+			&:before, &:after
+				background: $white
+	.sitelogo
+		a
+			img
+				+media-breakpoint-down(lg)
+					filter: invert(0%)
+	.menu
+		ul.menu-link
+			li
+				+ li
+					margin-left: 30px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				a
+					flex-wrap: wrap
+					+fs(14rem)
+					justify-content: center
+					align-items: center
+					align-content: center
+					&:after
+						+media-breakpoint-down(lg)
+							display: none
+					.icon
+						width: 80%
+						text-align: center
+						line-height: 1
+						+media-breakpoint-down(lg)
+							width: 20px
+						.material-icons
+							+fs(24rem)
+							line-height: 1
+							vertical-align: middle
+							+media-breakpoint-down(lg)
+								+fs(20rem)
+					.text
+						// width: 100%
+						margin-top: 10px
+						text-align: center
+						+media-breakpoint-down(lg)
+							width: calc(100% - 30px)
+							margin-top: 0
+							padding-left: 15px
+							text-align: left
+	.search
+		margin-left: 20px
+		.search-toggle
+			+flexbox
+			flex-wrap: wrap
+			justify-content: center
+			text-align: center
+			+media-breakpoint-down(lg)
+				color: $white
+			.icon
+				width: 80%
+				line-height: 1
+				.material-icons
+					+fs(24rem)
+					vertical-align: middle
+					line-height: 1
+			.text
+				margin-top: 10px
+				+fs(14rem)
+				+media-breakpoint-down(lg)
+					display: none
+.page-name-wrap
+	// background: $green
+	+media-breakpoint-down(lg)
+		padding-top: 50px
+	.page-name
+		height: 170px
+		+flexbox
+		align-items: center
+		align-content: center
+		+fs(30rem)
+		line-height: 1.5
+		color: $white
+		+media-breakpoint-down(lg)
+			height: auto
+			padding: 15px 0
+			+fs(24rem)
+
+// THEME COLOR
+
+.theme-1
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $pink
+.theme-2
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $red
+.theme-3
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $green
+.theme-4
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $amber
+.theme-5
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $purple
+.theme-6
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $indigo
+.theme-7
+	header, .page-name-wrap
+		+transition(background,0s)
+		background: $cyan
+// .theme-8
+	// header, .page-name-wrap
+	// 	+transition(background,0s)
+	// 	background: $green

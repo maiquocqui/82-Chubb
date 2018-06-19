@@ -1,0 +1,47 @@
+.page-name-wrap
+	.container
+		h1.page-name Xác nhận thông tin Bên mua Bảo hiểm
+.container
+	section.form-page
+		.form-wrap
+			h2.module-title Quý khách vui lòng cung cấp các thông tin sau đây để hoàn thành đăng ký tài khoản truy cập trang trực tuyến của Chubb Life.
+			//- .alert.alert-danger <i class="fa fa-info-circle"></i> Thông tin số Hợp đồng Bảo hiểm, Số Chứng minh nhân dân không hợp lệ. Vui lòng kiểm tra lại.
+			.row
+				.form-group.col-12.col-md-6
+					label Số Hợp đồng Bảo hiểm <span class="text-italic">(bao gồm 15 chữ số, kết thúc là 008)</span>
+					input.form-control(type="text" placeholder="")
+				.form-group.col-12.col-md-6
+					label Chứng minh Nhân dân
+					input.form-control(type="text" placeholder="")
+				.form-group.col-12.col-md-6
+					label Ngày phát hành Hợp đồng Bảo hiểm
+					input.form-control(type="text" placeholder="")
+				.form-group.col-12.col-md-6.price
+					label Mệnh giá hiện tại sản phẩm chính
+					input.form-control(type="text" placeholder="")
+				.form-group.col-12
+					.form-text.text-danger Ghi chú: Chỉ điền thông tin của cùng một Hợp đồng Bảo hiểm mà Quý khách đang tham gia tại Chubb Life.
+				.form-group.col-12
+					.checkbox.agree
+						input#chapnhan(type="checkbox", name="chapnhan")
+						label(for="chapnhan") Tôi đồng ý với các 
+							a.text-cyan(href="#!" data-toggle='modal', data-target='#dieukhoan') Điều khoản và Điều kiện sử dụng
+							|.
+				.col-12.btn-wrap
+					a.btn-go.btn-back(href="#!") Quay lại
+					input.btn-go.btn-continue(type="submit", value="Xác nhận")
+#dieukhoan.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog.home-modal(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Điều khoản và Điều kiện sử dụng
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					<i class="material-icons">close</i>
+			.modal-body
+				.content
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque ipsum dolorum harum praesentium ipsam laborum aliquam rerum dolorem illo?
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, pariatur inventore corporis sunt sed harum incidunt temporibus libero debitis minus reiciendis laudantium doloremque dolore! Architecto, qui. Eaque nihil voluptas similique.
+					ul
+						li Lorem ipsum dolor sit amet.
+						li Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatem.
+						li Lorem ipsum dolor sit amet, consectetur adipisicing.

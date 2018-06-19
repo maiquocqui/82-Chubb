@@ -1,0 +1,70 @@
+.banner-wrap
+	+pos(rel,null)
+	&:before
+		content: ''
+		display: block
+		+pos(abs, 0 0 null 0)
+		height: 160px
+		background: linear-gradient(color-rgba($black,0.3),color-rgba($black,0))
+		z-index: 1
+.banner
+	.slick-prev, .slick-next
+		+pos(abs, 50% null null null)
+		+transform(translate(0,-50%))
+		+fs(0)
+		z-index: 5
+		opacity: 0
+		color: $white
+		text-shadow: 0 3px 10px color-rgba($black,0.5)
+		+transition(all,0.5s)
+		&:before
+			content: ''
+			+fs(32rem)
+	.slick-prev
+		left: 30px
+		&:before
+			content: '\f104'
+	.slick-next
+		right: 30px
+		&:before
+			content: '\f105'
+	&:hover
+		.slick-prev, .slick-next
+			opacity: 0.5
+			&:hover
+				opacity: 1
+	.item
+		.banner-img
+			display: block
+			+media-breakpoint-down(md)
+				+flexbox
+				justify-content: center
+				img
+					height: 300px
+					max-width: unset
+		.banner-caption
+			+pos(abs, calc((100% + 80px) / 2) null null auto)
+			+transform(translate(0,-50%))
+			+fs(25rem)
+			line-height: 1.5
+			width: 50%
+			+font500
+			color: $white
+			border-left: 5px solid $green
+			padding: 5px 25px
+			text-shadow: 0 3px 40px color-rgba($black,0.3)
+			+media-breakpoint-down(lg)
+				+fs(18rem)
+				top: calc((100% + 60px) / 2)
+				padding: 5px 20px
+			+media-breakpoint-down(md)
+				+fs(16rem)
+				padding: 5px 15px
+			+media-breakpoint-down(sm)
+				top: unset
+				bottom: 15px
+				left: 15px
+				right: 15px
+				width: auto
+				background: color-rgba($black,0.3)
+				+transform(translate(0,0))

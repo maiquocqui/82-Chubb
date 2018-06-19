@@ -1,0 +1,76 @@
+.container
+	.row
+		.col-12.col-md-6
+			section.welcome-box
+				h2.home-title.text-center Bạn đã có tài khoản truy cập
+				.des.text-center Vui lòng đăng nhập để xem thông tin liên quan đến Hợp đồng Bảo hiểm
+				a.btn-go.go-login(href="#!") 
+					i.material-icons arrow_forward
+					|Đăng nhập
+		.col-12.col-md-6
+			section.welcome-box
+				h2.home-title.text-center Bạn chưa có tài khoản truy cập
+				.des.text-center Vui lòng đăng ký để xem thông tin liên quan đến Hợp đồng Bảo hiểm
+				a.btn-go.go-register(href="#!") 
+					i.material-icons arrow_forward
+					|Đăng ký
+	section.home-payment
+		h2.home-title.text-center Hướng dẫn các hình thức đóng phí
+		.payment-list
+			.row.justify-content-center
+				.col-12.col-sm-4.col-lg-3
+					.payment
+						figure
+							a.icon(href="#!" data-toggle='modal', data-target='#ttt')
+								img(src="img/icon/p1.png", alt="")
+							figcaption
+								h3.payment-name
+									a(href="#!" data-toggle='modal', data-target='#ttt') Thanh toán bằng thẻ
+				.col-12.col-sm-4.col-lg-3
+					.payment
+						figure
+							a.icon(href="#!")
+								img(src="img/icon/p2.png", alt="")
+							figcaption
+								h3.payment-name
+									a(href="#!") Thanh toán qua ngân hàng
+				.col-12.col-sm-4.col-lg-3
+					.payment
+						figure
+							a.icon(href="#!")
+								img(src="img/icon/p3.png", alt="")
+							figcaption
+								h3.payment-name
+									a(href="#!") Thanh toán bằng tiền mặt
+
+// Modal
+#ttt.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog.home-modal(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Thanh toán bằng thẻ
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					<i class="material-icons">close</i>
+			.modal-body
+				.content
+					ol
+						li
+							h5
+								strong Thanh toán trực tuyến
+							p Quý khách truy cập vào địa chỉ 
+								a.text-cyan(href="#!") https://www.baohiemchubblife.vn
+								|, chọn chức năng Thanh toán Trực tuyến để thanh toán phí Bảo hiểm bằng thẻ thanh toán ngân hàng
+								br
+								br
+						li
+							h5
+								strong Máy ATM của Ngân hàng Vietcombank
+							p Thẻ ATM hay thẻ ghi nợ của Vietcombank
+								br
+								br
+						li
+							h5
+								strong Thiết bị đọc thẻ (POS)
+							p Thiết bị đọc thẻ của Đại diện kinh doanh, của Đại lý thu phí và tại các Văn phòng giao dịch Chubb Life trên toàn quốc.
+								br
+								br

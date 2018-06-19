@@ -1,0 +1,78 @@
+.page-name-wrap
+	.container
+		h1.page-name Thông tin truy cập
+.container
+	section.form-page
+		.user-name Họ tên: Nguyễn Văn A
+		.form-wrap.info-form
+			h2.module-title Cập nhật email
+			.form-group
+				//- label Cập nhật địa chỉ thư điện tử
+				.form-child
+					.form-row
+						.form-group.col-12.col-sm-6.col-md-4
+							label Email hiện tại
+							input.form-control(type="email" value="nguyenvana@gmail.com" disabled)
+						.form-group.col-12.col-sm-6.col-md-4
+							label Email mới
+							input.form-control(type="email" value="")
+						.form-group.col-12.col-md-4
+							label.empty &nbsp;
+							.btn-wrap.justify-content-center.justify-content-sm-end
+								input.btn-go.btn-continue(type="submit", value="Đổi E-mail")
+		.form-wrap.info-form
+			h2.module-title Thay đổi mật khẩu truy cập
+			.form-group
+				//- label Thay đổi mật khẩu truy cập
+				.form-child
+					.form-row
+						.form-group.col-12.col-sm-6.col-md-4
+							label Mật khẩu hiện tại
+							input.form-control(type="password" value="")
+						.form-group.col-12.col-sm-6.col-md-4
+							label Mật khẩu mới
+							input.form-control(type="password" value="")
+						.form-group.col-12.col-sm-6.col-md-4
+							label Mật khẩu mới
+							input.form-control(type="password" value="")
+						.form-group.col-12
+							.form-text.text-orange Ghi chú: Mật khẩu phải ít nhất 12 ký tự, bao gồm ít nhất 1 chữ hoa, 1 chữ thường và 1 chữ số. Ví dụ: pass01Word23
+							.form-hr
+						.form-group.col-12
+							.btn-wrap.justify-content-center.justify-content-sm-end
+								input.btn-go.btn-continue(type="submit", value="Đổi mật khẩu")
+		.form-wrap.info-form
+			h2.module-title Thay đổi mã truy cập
+			.form-group
+				//- label Cập nhật địa chỉ thư điện tử
+				.form-child
+					.form-row
+						.form-group.col-12.col-sm-6.col-md-4
+							label Mã truy cập hiện tại
+							input.form-control(type="email" value="FDS465" disabled)
+						.form-group.col-12.col-sm-6.col-md-4
+							label Mã truy cập mới
+							input.form-control(type="email" value="")
+						.form-group.col-12.col-md-4
+							label.empty &nbsp;
+							.btn-wrap.justify-content-center.justify-content-sm-end
+								input.btn-go.btn-continue(type="submit", value="Đổi mã truy cập")
+		.form-wrap.info-form
+			h2.module-title Ngừng sử dụng dịch vụ thông tin HĐBH
+			.form-group
+				//- label Cập nhật địa chỉ thư điện tử
+				.form-child
+					.form-row
+						.form-group.col-12
+							.content
+								p Tình trạng sử dụng: 
+									span.status.status-success Đang sử dụng
+								span.text-orange Ghi chú:
+								br
+								ul
+									li Để ngừng sử dụng dịch vụ Thông tin Hợp đồng Bảo hiểm, Quý khách vui lòng click vào nút “Ngừng sử dụng”.
+									li Trong trường hợp Quý khách muốn sử dụng lại dịch vụ Thông tin Hợp đồng Bảo hiểm, xin vui lòng vào "Đăng nhập", chọn mục “Quên mật khẩu” để đăng ký lại.
+							.form-hr
+						.form-group.col-12
+							.btn-wrap.justify-content-center.justify-content-sm-end
+								input.btn-go.btn-continue(type="submit", value="Ngừng sử dụng")

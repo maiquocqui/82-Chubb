@@ -1,0 +1,44 @@
+.page-name-wrap
+	.container
+		h1.page-name Đăng nhập
+.container
+	section.form-page
+		//- .user-name Họ tên: Nguyễn Văn A
+		.form-wrap.info-form
+			h2.module-title Vui lòng nhập thông tin tài khoản để truy cập hệ thống
+			.form-group
+				//- label Cập nhật địa chỉ thư điện tử
+				.form-child
+					.form-row
+						.form-group.col-12.col-sm-6
+							label Tài khoản truy cập
+							input.form-control(type="email" value="")
+						.form-group.col-12.col-sm-6
+							label Mật khẩu
+							input.form-control(type="password" value="")
+						.form-group.col-12
+							.checkbox.agree
+								input#chapnhan(type="checkbox", name="chapnhan")
+								label(for="chapnhan") Tôi đồng ý với các 
+									a.text-cyan(href="#!" data-toggle='modal', data-target='#dieukhoan') Điều khoản và Điều kiện sử dụng
+									|.
+						.form-group.col-12
+							//- label &nbsp;
+							.btn-wrap.justify-content-start.align-items-center
+								input.btn-go.btn-continue(type="submit", value="Đăng nhập")
+								a.form-text.text-cyan.ml-3.mt-0(href="#!") Quên mật khẩu?
+#dieukhoan.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog.home-modal(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Điều khoản và Điều kiện sử dụng
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					<i class="material-icons">close</i>
+			.modal-body
+				.content
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque ipsum dolorum harum praesentium ipsam laborum aliquam rerum dolorem illo?
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, pariatur inventore corporis sunt sed harum incidunt temporibus libero debitis minus reiciendis laudantium doloremque dolore! Architecto, qui. Eaque nihil voluptas similique.
+					ul
+						li Lorem ipsum dolor sit amet.
+						li Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatem.
+						li Lorem ipsum dolor sit amet, consectetur adipisicing.

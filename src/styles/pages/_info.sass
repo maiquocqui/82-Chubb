@@ -1,0 +1,243 @@
+.form-page
+	padding: 60px 0
+	+media-breakpoint-down(lg)
+		padding: 40px 0
+	+media-breakpoint-down(sm)
+		padding: 30px 0
+	.user-name
+		+fs(18rem)
+		+font500
+		border-bottom: 1px solid darken($white,10%)
+		margin-bottom: 40px
+	.module-title
+		+fs(16rem)
+		+font700
+		margin-bottom: 40px
+		+media-breakpoint-down(lg)
+			margin-bottom: 30px
+		+media-breakpoint-down(md)
+			margin-bottom: 20px
+		+media-breakpoint-down(xs)
+			margin-bottom: 15px
+	.form-success
+		margin-bottom: 40px
+		.icon
+			padding: 20px 0
+			text-align: center
+		.success-title
+			+fs(24rem)
+			line-height: 1.2
+			+font500
+			// max-width: 70%
+			margin: 0 auto 10px
+			+media-breakpoint-down(lg)
+				+fs(22rem)
+			+media-breakpoint-down(md)
+				max-width: 80%
+				+fs(20rem)
+			+media-breakpoint-down(sm)
+				max-width: 100%
+				+fs(18rem)
+			+media-breakpoint-down(xs)
+		.success-des
+			+fs(24rem)
+			+font500
+			+media-breakpoint-down(lg)
+				+fs(22rem)
+			+media-breakpoint-down(md)
+				+fs(20rem)
+			+media-breakpoint-down(sm)
+				+fs(18rem)
+			a
+				color: $green
+				text-decoration: underline
+				&:hover
+					text-decoration: underline
+	.submit-notify
+		+fs(14rem)
+		padding: 20px 0
+.form-wrap
+	margin-bottom: 30px
+	&:last-child
+		+media-breakpoint-down(lg)
+			margin-bottom: 0
+	&.info-form
+		.module-title
+			+fs(20rem)
+			margin-bottom: 10px
+			+media-breakpoint-down(sm)
+				+fs(16rem)
+			+media-breakpoint-down(xs)
+				+fs(15rem)
+	.group
+		margin-bottom: 40px
+		border-bottom: 1px solid darken($white,20%)
+		&:nth-child(2)
+			margin-bottom: 15px
+		&:last-child
+			border-bottom: none
+		.module-title
+			+fs(20rem)
+			+media-breakpoint-down(sm)
+				+fs(16rem)
+	.row
+		margin: 0px -15px
+	.form-group
+		&.col-12
+			padding: 0px 15px
+			margin-bottom: 20px
+			+pos(rel,null)
+			&.price
+				&:after
+					content: 'VNĐ'
+					+font400i
+					+pos(abs, 45px 30px null null)
+					opacity: 0.3
+					+fs(13rem)
+	.form-row
+		margin: 0px -5px
+		.form-group
+			padding: 0px 5px
+	.form-child
+		+bor-rad(5px)
+		border: 1px solid darken($white,15%)
+		padding: 20px
+		background: $white
+		+media-breakpoint-down(xs)
+			padding: 15px
+		.form-row
+			margin: 0px -10px
+			.form-group
+				padding: 0px 10px
+	label
+		+fs(14rem)
+		+font500
+		padding: 5px 0
+		+media-breakpoint-down(lg)
+			+fs(13rem)
+		+media-breakpoint-down(xs)
+			+fs(12rem)
+		&.empty
+			+media-breakpoint-down(sm)
+				display: none
+		.required
+			color: $red
+		
+	.form-control
+		+fs(13rem)
+		line-height: 1.4
+		color: $main
+		background: $white
+		border: 2px solid darken($white,8%)
+		// padding: 12px 20px
+		padding: 0.735rem 1rem
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		+media-breakpoint-down(md)
+			padding: 10px
+		&:hover, &:active
+			border-color: $green
+			box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+		&.is-invalid
+			border-color: $red
+			color: $red
+		&:disabled
+			background: darken($white,3%)
+			&:hover
+				background: darken($white,3%)
+				border-color: darken($white,8%)
+				box-shadow: none
+		+ .form-text
+			margin-top: 10px
+	.invalid-feedback
+		font-family: inherit
+		.fa
+			margin-right: 10px
+	textarea.form-control
+		line-height: 1.5
+	select.form-control:not([size]):not([multiple])
+		height: calc(2.87rem + 0px)
+		padding: 0rem 0.875rem
+
+	// 	line-height: 1
+	// 	// padding: 12px 20px 13px
+	// 	+media-breakpoint-down(md)
+	// 		height: auto
+	// 		// padding: 10px 10px 11px
+	.form-text
+		+fs(13rem)
+		line-height: 1.2
+		font-weight: lighter
+		// margin-top: -10px
+		&.text-danger
+			color: $deeporange !important
+	.form-hr
+		width: 100%
+		height: 1px
+		background: darken($white,10%)
+		margin: 15px 0
+	.btn-wrap
+		justify-content: flex-end
+		width: 100%
+		// padding: 0px 15px
+	.agree
+		&.agree-info
+			margin: -20px 0 20px
+			+media-breakpoint-down(lg)
+				margin-top: -20px
+			+media-breakpoint-down(md)
+				margin-top: -10px
+			+media-breakpoint-down(xs)
+				margin-top: -5px
+				margin-bottom: 15px
+		input
+			+ label
+				+fs(13rem)
+				+font400
+				padding: 3px 0 3px 25px
+				.content
+					margin-bottom: 15px
+.form-disabled
+	pointer-events: none
+	filter: grayscale(100%)
+	label
+		opacity: 0.5
+	.form-control
+		background: darken($white,3%)
+		color: darken($white,60%)
+	.btn-wrap
+		.btn-go
+			background: darken($white,20%)
+			&.btn-continue
+				background: darken($white,20%)
+.btn-wrap
+	+flexbox
+	flex-wrap: wrap
+	.btn-go
+		display: block
+		background: $bluegrey
+		color: $white
+		+fs(14rem)
+		+font400
+		+bor-rad(50px)
+		line-height: 40px
+		border: none
+		text-align: center
+		padding: 0px 40px
+		+transition(all,0.5s)
+		+media-breakpoint-down(sm)
+			padding: 0px 20px
+			line-height: 36px
+		+ .btn-go
+			margin-left: 10px
+			+media-breakpoint-down(sm)
+				// margin-left: 0
+				// margin-top: 10px
+		&.btn-getotp
+			background: $cyan
+		&.btn-continue
+			background: $green
+		&:hover
+			filter: brightness(110%)
+			box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)

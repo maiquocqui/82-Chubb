@@ -1,0 +1,26 @@
+.page-name-wrap
+	.container
+		h1.page-name Yêu cầu cấp lại mật khẩu truy cập
+.container
+	section.form-page
+		.form-wrap
+			h2.module-title Quý khách vui lòng cung cấp các thông tin sau đây để nhận lại mật khẩu truy cập.
+			.row
+				.form-group.col-12
+					label Tài khoản truy cập
+					input.form-control(type="text" placeholder="")
+				//- .form-group.col-12.col-md-6
+					label Nhập mã OTP
+					input.form-control(type="password" placeholder="")
+				.form-group.col-12.col-md-6
+					label Tạo mật khẩu mới
+					input.form-control(type="password" placeholder="")
+				.form-group.col-12.col-md-6
+					label Xác nhận mật khẩu mới
+					input.form-control(type="password" placeholder="")
+				//- .form-group.col-12
+					.form-text.text-danger Mã giao dịch (OTP) sẽ được gửi đến số điện thoại: &#60;0908xxx988&#62; của Quý khách!
+				.col-12.btn-wrap
+					a.btn-go.btn-back(href="#!") Quay lại
+					//- a.btn-go.btn-getotp(href="#!") Cấp lại mã OTP
+					input.btn-go.btn-continue(type="submit", value="Xác nhận")
